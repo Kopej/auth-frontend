@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth"; // Change if your backend is on a different port
+const BASE_URL = import.meta.env.VITE_API_URL; // Change if your backend is on a different port
 
 export async function registerUser(userData) {
   const res = await fetch(`${API_URL}/register`, {
